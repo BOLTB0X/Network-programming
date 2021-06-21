@@ -7,7 +7,7 @@
 #pragma comment (lib, "ws2_32.lib")
 
 using namespace std;
-
+ 
 class Client {
 private:
 	int clientID;
