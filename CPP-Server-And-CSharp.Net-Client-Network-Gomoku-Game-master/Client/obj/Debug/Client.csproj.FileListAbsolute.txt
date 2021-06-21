@@ -1,0 +1,11 @@
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\bin\Debug\Client.exe.config
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\bin\Debug\Client.exe
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\bin\Debug\Client.pdb
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.MenuForm.resources
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.MultiPlayForm.resources
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.Properties.Resources.resources
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.SinglePlayForm.resources
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.exe
+C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Client\obj\Debug\Client.pdb

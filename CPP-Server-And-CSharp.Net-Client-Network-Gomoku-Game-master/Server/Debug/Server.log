@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\github\cpp-server-and-csharp.net-client-network-gomoku-game-master\server\main.cpp(55): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\github\cpp-server-and-csharp.net-client-network-gomoku-game-master\server\main.cpp(66): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\github\cpp-server-and-csharp.net-client-network-gomoku-game-master\server\main.cpp(83): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\github\cpp-server-and-csharp.net-client-network-gomoku-game-master\server\main.cpp(94): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\github\cpp-server-and-csharp.net-client-network-gomoku-game-master\server\main.cpp(115): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\github\cpp-server-and-csharp.net-client-network-gomoku-game-master\server\main.cpp(166): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Server.vcxproj -> C:\GitHub\CPP-Server-And-CSharp.Net-Client-Network-Gomoku-Game-master\Debug\Server.exe
