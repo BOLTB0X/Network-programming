@@ -4,30 +4,30 @@
 #include <string>
 #include <boost/asio.hpp>
 
-using boost::asio::ip::tcp; //¶óÀÌºê·¯¸®¸¦ ±×´ë·Î »ç¿ë
+using boost::asio::ip::tcp; //ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ê·¸ëŒ€ë¡œ ì‚¬ìš©
 using namespace std;
 
-//¼­¹ö ÄÄÇ»ÅÍÀÇ ³¯Â¥ ¹× ½Ã°£ Á¤º¸¸¦ ¹İÈ¯
+//ì„œë²„ ì»´í“¨í„°ì˜ ë‚ ì§œ ë° ì‹œê°„ ì •ë³´ë¥¼ ë°˜í™˜
 string make_daytime_string() {
-	time_t now = time(0); //ÃÊ±âÈ­
+	time_t now = time(0); //ì´ˆê¸°í™”
 	return ctime(&now);
 }
 
 int main() {
-	//80¹ø:http 13¹ø:date
+	//80ë²ˆ:http 13ë²ˆ:date
 	try {
-		// ±âÁ¸ÀûÀ¸·Î Boost.Asio ÇÁ·Î±×·¥Àº ÇÏ³ªÀÇ IO Service °´Ã¼¸¦ °¡Áı´Ï´Ù.
+		//Boost.Asio í”„ë¡œê·¸ë¨ì€ í•˜ë‚˜ì˜ IO Service ê°ì²´ë¥¼ ê°€ì§
 		boost::asio::io_service io_service; 
-		// TCP ÇÁ·ÎÅäÄİÀÇ 13¹ø Æ÷Æ®·Î ¿¬°áÀ» ¹Ş´Â ¼öµ¿¼ÒÄÏÀ» »ı¼º
-		tcp::acceptor acceptor(io_service, tcp::endpoint(tcp::v4(), 13)); //ÁÖ¼Ò °´Ã¼ »ç¿ë
-		//¸ğµç Å¬¶óÀÌ¾ğÆ®¿¡ ´ëÇØ ¹«ÇÑÁ¤ ¹İº¹ ¼öÇà
+		// TCP í”„ë¡œí† ì½œì˜ 13ë²ˆ í¬íŠ¸ë¡œ ì—°ê²°ì„ ë°›ëŠ” ìˆ˜ë™ì†Œì¼“ì„ ìƒì„±
+		tcp::acceptor acceptor(io_service, tcp::endpoint(tcp::v4(), 13)); //ì£¼ì†Œ ê°ì²´ ì‚¬ìš©
+		//ëª¨ë“  í´ë¼ì´ì–¸íŠ¸ì— ëŒ€í•´ ë¬´í•œì • ë°˜ë³µ ìˆ˜í–‰
 		while (1) {
-			//¼ÒÄÏ °´Ã¼¸¦ »ı¼ºÇØ ¿¬°áÀ» ´ë±âÇÔ
+			//ì†Œì¼“ ê°ì²´ë¥¼ ìƒì„±í•´ ì—°ê²°ì„ ëŒ€ê¸°
 			tcp::socket socket(io_service);
 			acceptor.accept(socket);
-			//¿¬°áÀÌ ¿Ï·áµÇ¸é ÇØ´ç Å¬¶óÀÌ¾ğÆ®¿¡°Ô ¸Ş¼¼Áö¸¦ »ı¼º
+			//ì—°ê²°ì´ ì™„ë£Œë˜ë©´ í•´ë‹¹ë˜ëŠ” í´ë¼ì´ì–¸íŠ¸ì—ê²Œ ë©”ì„¸ì§€ë¥¼ ìƒì„±
 			string message = make_daytime_string();
-			//ÇØ´ç Å¬¶óÀÌ¾ğÆ®¿¡°Ô ¸Ş½ÃÁö¸¦ ´ã¾Æ Àü¼Û
+			//í•´ë‹¹ í´ë¼ì´ì–¸íŠ¸ì—ê²Œ ë©”ì‹œì§€ë¥¼ ë‹´ì•„ ì „ì†¡
 			boost::system::error_code ignored_error;
 			boost::asio::write(socket, boost::asio::buffer(message), ignored_error);
 		}
